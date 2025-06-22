@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Fashion Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Photography Bookings</h1>
+    <h2>Contact Us</h2>
+    <div class="social-buttons">
+        <button onclick="window.location.href='//mailurl'">
+            <img src="https://media.istockphoto.com/id/826567080/vector/e-mail-icon-simple-vector-illustration-red-color.jpg?s=612x612&w=0&k=20&c=ysxmzarWz_6a2oyi1ue9p6OUBXAw8W1LQPsyorc_5hY=" alt="Email">
+        </button>
+        <button onclick="window.location.href='//instaurl'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTekRPwDF-5-G6UXBPEQ3Ihnq43M3LRm9x08g&s" alt="Instagram">
+        </button>
+        <button onclick="window.location.href='tel://phn'">
+            <img src="https://freesvg.org/img/phone-call-icon.png" alt="Call Now">
+        </button>
+    </div>
+
+    <div class="service-list">
+        <li>Baby Shoots</li>
+        <li>Pre-Wedding</li>
+        <li>Wedding</li>
+    </div>
+
+    <div class="images">
+        <div class="image">
+            
+                <img src="https://i.pinimg.com/564x/ec/d4/1b/ecd41b31d4263e8f459874a3c7617b06.jpg" onclick="openForm()">
+           
+        </div>
+        <div class="image">
+           
+                <img src="https://chitrageek.com/wp-content/uploads/2024/09/Pre-Wedding-Traditional-Couple-Pose-2.webp" onclick="openForm()">
+            
+        </div>
+        <div class="image">
+            
+                <img src="https://media-api.xogrp.com/images/f4570601-a1e6-4802-86fb-ad9e988066fe~rs_768.h" onclick="openForm()">
+           
+        </div>
+         <!-- Modal (Form) -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Book Your Shoot</h2>
+            <form id="bookingForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+    
+                <label for="shoot">Shoot Type</label>
+                <select id="shoot" required>
+                    <option value="baby">Baby Shoot</option>
+                    <option value="pre-wedding">Pre-Wedding</option>
+                    <option value="wedding">Wedding</option>
+                </select>
+    
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+    
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+    
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        </div>
+
+    </div>
+    <div class="review">
+        <button onclick="window.location.href='//google-form'">Feedback</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Avatar Fashion Photography. All Rights Reserved.</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
